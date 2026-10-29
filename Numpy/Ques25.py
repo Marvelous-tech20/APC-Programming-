@@ -1,0 +1,12 @@
+import numpy as np
+arr = np.random.randint(1, 101, (3, 4, 5))
+flat = arr.flatten()
+average = np.mean(flat)
+print("Original Array:")
+print(arr)
+print("Greater than 50:")
+print(flat[flat > 50])
+print("Even numbers:")
+print(flat[flat % 2 == 0])
+print("Less than average:")
+print(flat[flat < average])
